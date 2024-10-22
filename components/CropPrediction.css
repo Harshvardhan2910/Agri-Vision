@@ -1,0 +1,101 @@
+/* CropPrediction.css */
+
+html, body {
+    height: 100%; /* Ensure the html and body cover the full height of the viewport */
+    margin: 0; /* Remove default margin from body */
+    padding: 0; /* Remove default padding from body */
+}
+
+.predict-body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background color for the entire page */
+    margin: 0;
+    padding: 20px;
+    background-image: url('../assets/predictionbg.jpg'); /* Background for the whole page */
+    background-size: cover; /* Ensures the image covers the full background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents background repetition */
+    height: 100%; /* Ensure the background covers the entire height of the page */
+    width: 100%; /* Ensure the background covers the entire width of the page */
+    box-sizing: border-box; /* Ensures padding is included within the element's width/height */
+}
+
+
+
+  
+h1 {
+    text-align: center;
+    color: #000000; /* Dark green color for the heading */
+    font-size: 40px;
+}
+  
+form {
+    background-color: rgba(255, 255, 255, 0.6);; /* White background for the form */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Maximum width for the form */
+    margin: 10px auto; /* Center the form */
+    display: flex; /* Enable flexbox */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    gap: 10px; /* Space between fields */
+    
+}
+  
+label {
+    flex: 1 1 48%; /* Each label takes up to 48% of the row, allowing for two in each row */
+    color: #333; /* Darker text color for better readability */
+}
+  
+input[type="number"] {
+    flex: 1 1 48%; /* Each input takes up to 48% of the row */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size for inputs */
+    margin-bottom: 15px; /* Space below each input */
+}
+  
+button {
+    background-color: #000000b4; /* Green background for the button */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 15px 20px; /* Padding for the button */
+    font-size: 24px; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    width: 100%; /* Full width for the button */
+    font-weight: bold;
+}
+  
+button:hover {
+    background-color: #00000090; /* Darker green on hover */
+}
+  
+h2 {
+    text-align: center; /* Center the predicted crop result */
+    color: #ffffff; /* Dark green color for the result */
+    margin-top: 20px; /* Space above the result */
+    font-weight: 700;
+}
+.predict-result {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .heading-result{
+    color:white ;
+    font-size: 24px;
+  } 
+
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
